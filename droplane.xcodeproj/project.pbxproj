@@ -8,28 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		A715F2F7283CDAE100941D11 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A715F2F6283CDAE100941D11 /* MapKit.framework */; };
+		A767BFE1288959C3003CC165 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767BFE0288959C3003CC165 /* SplashViewController.swift */; };
+		A767BFE328895A53003CC165 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767BFE228895A53003CC165 /* SplashPresenter.swift */; };
+		A767BFE528895A91003CC165 /* SplashAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767BFE428895A91003CC165 /* SplashAnimator.swift */; };
+		A79CB690287AC43F0000008F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB68F287AC43F0000008F /* Place.swift */; };
+		A7A46E85288ACFF900CA5CEE /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A46E84288ACFF900CA5CEE /* AppDependencies.swift */; };
 		A7C6809A2836AA0C00B25117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C680992836AA0C00B25117 /* AppDelegate.swift */; };
 		A7C6809C2836AA0C00B25117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C6809B2836AA0C00B25117 /* SceneDelegate.swift */; };
-		A7C6809E2836AA0C00B25117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C6809D2836AA0C00B25117 /* ViewController.swift */; };
+		A7C6809E2836AA0C00B25117 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C6809D2836AA0C00B25117 /* MainViewController.swift */; };
 		A7C680A32836AA0D00B25117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C680A22836AA0D00B25117 /* Assets.xcassets */; };
-		A7C680A62836AA0D00B25117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C680A42836AA0D00B25117 /* LaunchScreen.storyboard */; };
+		A7D8B92E2895B44900C40D21 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8B92D2895B44900C40D21 /* PlaceDetailsViewController.swift */; };
+		A7D8B9332895B56000C40D21 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8B9322895B56000C40D21 /* UILabel+Ext.swift */; };
 		A7FDE97D2879C4B000B5A9B9 /* HorizontalSnappingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDE97C2879C4B000B5A9B9 /* HorizontalSnappingController.swift */; };
 		A7FDE97F2879C60400B5A9B9 /* MainHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDE97E2879C60400B5A9B9 /* MainHorizontalController.swift */; };
-		A7FDE9812879C63D00B5A9B9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDE9802879C63D00B5A9B9 /* CustomCell.swift */; };
+		A7FDE9812879C63D00B5A9B9 /* PlaceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDE9802879C63D00B5A9B9 /* PlaceViewCell.swift */; };
+		F677E4FD08545764747CA0B7 /* Pods_droplane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD6454ED4D5D5815414C3E8 /* Pods_droplane.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DD6454ED4D5D5815414C3E8 /* Pods_droplane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_droplane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2718570B09BD143A7F18B44C /* Pods-droplane.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-droplane.debug.xcconfig"; path = "Target Support Files/Pods-droplane/Pods-droplane.debug.xcconfig"; sourceTree = "<group>"; };
 		A715F2F6283CDAE100941D11 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A767BFE0288959C3003CC165 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A767BFE228895A53003CC165 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		A767BFE428895A91003CC165 /* SplashAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAnimator.swift; sourceTree = "<group>"; };
+		A79CB68F287AC43F0000008F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		A7A46E84288ACFF900CA5CEE /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		A7C680962836AA0C00B25117 /* droplane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = droplane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C680992836AA0C00B25117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7C6809B2836AA0C00B25117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7C6809D2836AA0C00B25117 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7C6809D2836AA0C00B25117 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A7C680A22836AA0D00B25117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A7C680A52836AA0D00B25117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7C680A72836AA0D00B25117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D8B92D2895B44900C40D21 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		A7D8B9322895B56000C40D21 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		A7FDE97C2879C4B000B5A9B9 /* HorizontalSnappingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSnappingController.swift; sourceTree = "<group>"; };
 		A7FDE97E2879C60400B5A9B9 /* MainHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHorizontalController.swift; sourceTree = "<group>"; };
-		A7FDE9802879C63D00B5A9B9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		A7FDE9802879C63D00B5A9B9 /* PlaceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewCell.swift; sourceTree = "<group>"; };
+		E211A29AE70B4EB6F393039F /* Pods-droplane.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-droplane.release.xcconfig"; path = "Target Support Files/Pods-droplane/Pods-droplane.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,18 +54,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				A715F2F7283CDAE100941D11 /* MapKit.framework in Frameworks */,
+				F677E4FD08545764747CA0B7 /* Pods_droplane.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52D1045D1E197C384CF49D7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2718570B09BD143A7F18B44C /* Pods-droplane.debug.xcconfig */,
+				E211A29AE70B4EB6F393039F /* Pods-droplane.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A715F2F5283CDAE100941D11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A715F2F6283CDAE100941D11 /* MapKit.framework */,
+				0DD6454ED4D5D5815414C3E8 /* Pods_droplane.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A767BFDF288959B6003CC165 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A767BFE0288959C3003CC165 /* SplashViewController.swift */,
+				A767BFE228895A53003CC165 /* SplashPresenter.swift */,
+				A767BFE428895A91003CC165 /* SplashAnimator.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A77B9BC6288ACCBD004EB769 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7C680A22836AA0D00B25117 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A77B9BC7288ACCDD004EB769 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A7C680992836AA0C00B25117 /* AppDelegate.swift */,
+				A7C6809B2836AA0C00B25117 /* SceneDelegate.swift */,
+				A7D8B9312895B54D00C40D21 /* Extensions */,
+				A7D8B92A2895ADD500C40D21 /* Core */,
+				A7D8B9282895ADBB00C40D21 /* Model */,
+				A7D8B9292895ADC500C40D21 /* Views */,
+				A7D8B92B2895B3E300C40D21 /* Controllers */,
+				A767BFDF288959B6003CC165 /* Splash */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A79CB68E287AC3D00000008F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7C680A72836AA0D00B25117 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A7C6808D2836AA0C00B25117 = {
@@ -58,6 +126,7 @@
 				A7C680982836AA0C00B25117 /* droplane */,
 				A7C680972836AA0C00B25117 /* Products */,
 				A715F2F5283CDAE100941D11 /* Frameworks */,
+				52D1045D1E197C384CF49D7D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,17 +141,62 @@
 		A7C680982836AA0C00B25117 /* droplane */ = {
 			isa = PBXGroup;
 			children = (
-				A7C680992836AA0C00B25117 /* AppDelegate.swift */,
-				A7C6809B2836AA0C00B25117 /* SceneDelegate.swift */,
-				A7C6809D2836AA0C00B25117 /* ViewController.swift */,
-				A7FDE97E2879C60400B5A9B9 /* MainHorizontalController.swift */,
-				A7FDE9802879C63D00B5A9B9 /* CustomCell.swift */,
-				A7FDE97C2879C4B000B5A9B9 /* HorizontalSnappingController.swift */,
-				A7C680A22836AA0D00B25117 /* Assets.xcassets */,
-				A7C680A42836AA0D00B25117 /* LaunchScreen.storyboard */,
-				A7C680A72836AA0D00B25117 /* Info.plist */,
+				A77B9BC7288ACCDD004EB769 /* Classes */,
+				A77B9BC6288ACCBD004EB769 /* Resources */,
+				A79CB68E287AC3D00000008F /* Supporting Files */,
 			);
 			path = droplane;
+			sourceTree = "<group>";
+		};
+		A7D8B9282895ADBB00C40D21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A79CB68F287AC43F0000008F /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7D8B9292895ADC500C40D21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7FDE9802879C63D00B5A9B9 /* PlaceViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7D8B92A2895ADD500C40D21 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A7A46E84288ACFF900CA5CEE /* AppDependencies.swift */,
+				A7D8B92C2895B3F400C40D21 /* Controllers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A7D8B92B2895B3E300C40D21 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7C6809D2836AA0C00B25117 /* MainViewController.swift */,
+				A7FDE97E2879C60400B5A9B9 /* MainHorizontalController.swift */,
+				A7D8B92D2895B44900C40D21 /* PlaceDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7D8B92C2895B3F400C40D21 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7FDE97C2879C4B000B5A9B9 /* HorizontalSnappingController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7D8B9312895B54D00C40D21 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7D8B9322895B56000C40D21 /* UILabel+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7C680AA2836AA0D00B25117 /* Build configuration list for PBXNativeTarget "droplane" */;
 			buildPhases = (
+				437C92494288467B87F69EAA /* [CP] Check Pods Manifest.lock */,
+				A7D8B9272895AA2400C40D21 /* Run SwiftLint */,
 				A7C680922836AA0C00B25117 /* Sources */,
 				A7C680932836AA0C00B25117 /* Frameworks */,
 				A7C680942836AA0C00B25117 /* Resources */,
+				2CA9134B21BD733CB563B567 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,12 +260,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7C680A62836AA0D00B25117 /* LaunchScreen.storyboard in Resources */,
 				A7C680A32836AA0D00B25117 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CA9134B21BD733CB563B567 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-droplane/Pods-droplane-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-droplane/Pods-droplane-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-droplane/Pods-droplane-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		437C92494288467B87F69EAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-droplane-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7D8B9272895AA2400C40D21 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7C680922836AA0C00B25117 /* Sources */ = {
@@ -156,26 +332,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7FDE97F2879C60400B5A9B9 /* MainHorizontalController.swift in Sources */,
-				A7C6809E2836AA0C00B25117 /* ViewController.swift in Sources */,
+				A7A46E85288ACFF900CA5CEE /* AppDependencies.swift in Sources */,
+				A767BFE528895A91003CC165 /* SplashAnimator.swift in Sources */,
+				A7C6809E2836AA0C00B25117 /* MainViewController.swift in Sources */,
 				A7C6809A2836AA0C00B25117 /* AppDelegate.swift in Sources */,
 				A7C6809C2836AA0C00B25117 /* SceneDelegate.swift in Sources */,
-				A7FDE9812879C63D00B5A9B9 /* CustomCell.swift in Sources */,
+				A7D8B9332895B56000C40D21 /* UILabel+Ext.swift in Sources */,
+				A7D8B92E2895B44900C40D21 /* PlaceDetailsViewController.swift in Sources */,
+				A7FDE9812879C63D00B5A9B9 /* PlaceViewCell.swift in Sources */,
+				A79CB690287AC43F0000008F /* Place.swift in Sources */,
 				A7FDE97D2879C4B000B5A9B9 /* HorizontalSnappingController.swift in Sources */,
+				A767BFE1288959C3003CC165 /* SplashViewController.swift in Sources */,
+				A767BFE328895A53003CC165 /* SplashPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A7C680A42836AA0D00B25117 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7C680A52836AA0D00B25117 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A7C680A82836AA0D00B25117 /* Debug */ = {
@@ -294,6 +466,7 @@
 		};
 		A7C680AB2836AA0D00B25117 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2718570B09BD143A7F18B44C /* Pods-droplane.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,9 +474,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WMWSB972VT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = droplane/Info.plist;
+				INFOPLIST_FILE = "droplane/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +494,7 @@
 		};
 		A7C680AC2836AA0D00B25117 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E211A29AE70B4EB6F393039F /* Pods-droplane.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -328,9 +502,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WMWSB972VT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = droplane/Info.plist;
+				INFOPLIST_FILE = "droplane/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
