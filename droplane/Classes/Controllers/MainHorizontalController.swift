@@ -36,10 +36,12 @@ final class MainHorizontalController: HorizontalSnappingController {
         collectionView.deselectItem(at: indexPath, animated: true)
         
         let place = MockData.mock[indexPath.item]
-//        
-//        let placeDetailViewController = PlaceDetailsViewController(place: place)
-//        placeDetailViewController.modalPresentationStyle = .fullScreen
-//        present(placeDetailViewController, animated: true)
+        
+        let placeDetailViewController = PlaceDetailsViewController(place: place)
+        placeDetailViewController.modalPresentationStyle = .fullScreen
+        
+//        navigationController?.pushViewController(placeDetailViewController, animated: true)
+        show(placeDetailViewController, sender: self)
     }
 }
 

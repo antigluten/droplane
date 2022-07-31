@@ -19,6 +19,8 @@
 		A7C680A32836AA0D00B25117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C680A22836AA0D00B25117 /* Assets.xcassets */; };
 		A7D8B92E2895B44900C40D21 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8B92D2895B44900C40D21 /* PlaceDetailsViewController.swift */; };
 		A7D8B9332895B56000C40D21 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8B9322895B56000C40D21 /* UILabel+Ext.swift */; };
+		A7D8B9372895DB9A00C40D21 /* PlaceDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8B9362895DB9A00C40D21 /* PlaceDetailHeaderView.swift */; };
+		A7D8B939289685D000C40D21 /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8B938289685D000C40D21 /* StretchyHeaderLayout.swift */; };
 		A7FDE97D2879C4B000B5A9B9 /* HorizontalSnappingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDE97C2879C4B000B5A9B9 /* HorizontalSnappingController.swift */; };
 		A7FDE97F2879C60400B5A9B9 /* MainHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDE97E2879C60400B5A9B9 /* MainHorizontalController.swift */; };
 		A7FDE9812879C63D00B5A9B9 /* PlaceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDE9802879C63D00B5A9B9 /* PlaceViewCell.swift */; };
@@ -42,6 +44,8 @@
 		A7C680A72836AA0D00B25117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7D8B92D2895B44900C40D21 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
 		A7D8B9322895B56000C40D21 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		A7D8B9362895DB9A00C40D21 /* PlaceDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailHeaderView.swift; sourceTree = "<group>"; };
+		A7D8B938289685D000C40D21 /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 		A7FDE97C2879C4B000B5A9B9 /* HorizontalSnappingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSnappingController.swift; sourceTree = "<group>"; };
 		A7FDE97E2879C60400B5A9B9 /* MainHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHorizontalController.swift; sourceTree = "<group>"; };
 		A7FDE9802879C63D00B5A9B9 /* PlaceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewCell.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				A7FDE9802879C63D00B5A9B9 /* PlaceViewCell.swift */,
+				A7D8B9362895DB9A00C40D21 /* PlaceDetailHeaderView.swift */,
+				A7D8B938289685D000C40D21 /* StretchyHeaderLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,6 +339,8 @@
 			files = (
 				A7FDE97F2879C60400B5A9B9 /* MainHorizontalController.swift in Sources */,
 				A7A46E85288ACFF900CA5CEE /* AppDependencies.swift in Sources */,
+				A7D8B9372895DB9A00C40D21 /* PlaceDetailHeaderView.swift in Sources */,
+				A7D8B939289685D000C40D21 /* StretchyHeaderLayout.swift in Sources */,
 				A767BFE528895A91003CC165 /* SplashAnimator.swift in Sources */,
 				A7C6809E2836AA0C00B25117 /* MainViewController.swift in Sources */,
 				A7C6809A2836AA0C00B25117 /* AppDelegate.swift in Sources */,
