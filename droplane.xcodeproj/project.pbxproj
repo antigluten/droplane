@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A715F2F7283CDAE100941D11 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A715F2F6283CDAE100941D11 /* MapKit.framework */; };
+		A74B0FEC2896C3DE00429CE5 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74B0FEB2896C3DE00429CE5 /* SectionHeaderView.swift */; };
+		A74B0FEE2896E79500429CE5 /* PlaceDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74B0FED2896E79500429CE5 /* PlaceDetailViewCell.swift */; };
+		A74B0FF0289706C200429CE5 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74B0FEF289706C200429CE5 /* MainTabbarController.swift */; };
+		A75BFAE82896A0B2004E2A3E /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BFAE72896A0B2004E2A3E /* UIViewController+Ext.swift */; };
+		A75BFAF02896BC98004E2A3E /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BFAEF2896BC98004E2A3E /* SectionView.swift */; };
+		A75BFAF22896BD52004E2A3E /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BFAF12896BD52004E2A3E /* UIView+Ext.swift */; };
 		A767BFE1288959C3003CC165 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767BFE0288959C3003CC165 /* SplashViewController.swift */; };
 		A767BFE328895A53003CC165 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767BFE228895A53003CC165 /* SplashPresenter.swift */; };
 		A767BFE528895A91003CC165 /* SplashAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767BFE428895A91003CC165 /* SplashAnimator.swift */; };
@@ -31,6 +37,12 @@
 		0DD6454ED4D5D5815414C3E8 /* Pods_droplane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_droplane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2718570B09BD143A7F18B44C /* Pods-droplane.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-droplane.debug.xcconfig"; path = "Target Support Files/Pods-droplane/Pods-droplane.debug.xcconfig"; sourceTree = "<group>"; };
 		A715F2F6283CDAE100941D11 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A74B0FEB2896C3DE00429CE5 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		A74B0FED2896E79500429CE5 /* PlaceDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewCell.swift; sourceTree = "<group>"; };
+		A74B0FEF289706C200429CE5 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		A75BFAE72896A0B2004E2A3E /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		A75BFAEF2896BC98004E2A3E /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		A75BFAF12896BD52004E2A3E /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		A767BFE0288959C3003CC165 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A767BFE228895A53003CC165 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		A767BFE428895A91003CC165 /* SplashAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAnimator.swift; sourceTree = "<group>"; };
@@ -166,6 +178,9 @@
 				A7FDE9802879C63D00B5A9B9 /* PlaceViewCell.swift */,
 				A7D8B9362895DB9A00C40D21 /* PlaceDetailHeaderView.swift */,
 				A7D8B938289685D000C40D21 /* StretchyHeaderLayout.swift */,
+				A75BFAEF2896BC98004E2A3E /* SectionView.swift */,
+				A74B0FEB2896C3DE00429CE5 /* SectionHeaderView.swift */,
+				A74B0FED2896E79500429CE5 /* PlaceDetailViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +200,7 @@
 				A7C6809D2836AA0C00B25117 /* MainViewController.swift */,
 				A7FDE97E2879C60400B5A9B9 /* MainHorizontalController.swift */,
 				A7D8B92D2895B44900C40D21 /* PlaceDetailsViewController.swift */,
+				A74B0FEF289706C200429CE5 /* MainTabbarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				A7D8B9322895B56000C40D21 /* UILabel+Ext.swift */,
+				A75BFAE72896A0B2004E2A3E /* UIViewController+Ext.swift */,
+				A75BFAF12896BD52004E2A3E /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -340,17 +358,23 @@
 				A7FDE97F2879C60400B5A9B9 /* MainHorizontalController.swift in Sources */,
 				A7A46E85288ACFF900CA5CEE /* AppDependencies.swift in Sources */,
 				A7D8B9372895DB9A00C40D21 /* PlaceDetailHeaderView.swift in Sources */,
+				A74B0FEE2896E79500429CE5 /* PlaceDetailViewCell.swift in Sources */,
 				A7D8B939289685D000C40D21 /* StretchyHeaderLayout.swift in Sources */,
+				A74B0FF0289706C200429CE5 /* MainTabbarController.swift in Sources */,
 				A767BFE528895A91003CC165 /* SplashAnimator.swift in Sources */,
 				A7C6809E2836AA0C00B25117 /* MainViewController.swift in Sources */,
+				A75BFAF22896BD52004E2A3E /* UIView+Ext.swift in Sources */,
 				A7C6809A2836AA0C00B25117 /* AppDelegate.swift in Sources */,
 				A7C6809C2836AA0C00B25117 /* SceneDelegate.swift in Sources */,
+				A74B0FEC2896C3DE00429CE5 /* SectionHeaderView.swift in Sources */,
 				A7D8B9332895B56000C40D21 /* UILabel+Ext.swift in Sources */,
 				A7D8B92E2895B44900C40D21 /* PlaceDetailsViewController.swift in Sources */,
 				A7FDE9812879C63D00B5A9B9 /* PlaceViewCell.swift in Sources */,
+				A75BFAF02896BC98004E2A3E /* SectionView.swift in Sources */,
 				A79CB690287AC43F0000008F /* Place.swift in Sources */,
 				A7FDE97D2879C4B000B5A9B9 /* HorizontalSnappingController.swift in Sources */,
 				A767BFE1288959C3003CC165 /* SplashViewController.swift in Sources */,
+				A75BFAE82896A0B2004E2A3E /* UIViewController+Ext.swift in Sources */,
 				A767BFE328895A53003CC165 /* SplashPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

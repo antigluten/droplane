@@ -16,7 +16,7 @@ final class PlaceDetailsViewController: UICollectionViewController {
         let layout = StretchyHeaderLayout()
         super.init(collectionViewLayout: layout)
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(PlaceDetailViewCell.self, forCellWithReuseIdentifier: "cell")
         collectionView.register(PlaceDetailHeaderView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withReuseIdentifier: "headerView")
@@ -46,8 +46,21 @@ final class PlaceDetailsViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        if let placeCell = cell as? PlaceDetailViewCell {
+            let view = SectionView(title: "Ratings", iconName: "star.fill", contentView: UIView())
+            
+            placeCell.stackView.addArrangedSubview(view)
+            
+            let view1 = SectionView(title: "Photos", iconName: "photo.fill", contentView: UIView())
+            placeCell.stackView.addArrangedSubview(view1)
+            
+            let view2 = SectionView(title: "Things", iconName: "photo.fill", contentView: UIView())
+            placeCell.stackView.addArrangedSubview(view2)
+            
+            return placeCell
+        }
         
-        return cell
+        return UICollectionViewCell()
     }
     
     override func collectionView(_ collectionView: UICollectionView,

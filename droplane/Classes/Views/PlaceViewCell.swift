@@ -14,6 +14,7 @@ final class PlaceViewCell: UICollectionViewCell {
     let container = UIView().then {
         $0.layer.cornerRadius = 25
         $0.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        $0.backgroundColor = .tertiarySystemBackground
     }
 
     let imageView = UIImageView().then {
@@ -39,8 +40,6 @@ final class PlaceViewCell: UICollectionViewCell {
         addSubview(imageView)
         container.addSubview(label)
         container.addSubview(priceLabel)
-
-        container.backgroundColor = .secondarySystemGroupedBackground
 
         label.sizeToFit()
 
