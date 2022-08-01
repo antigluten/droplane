@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  SearchViewController.swift
 //  droplane
 //
 //  Created by Vladimir Gusev on 19.05.2022.
@@ -11,9 +11,7 @@ import CoreLocation
 import Then
 import SnapKit
 
-final class MainViewController: UIViewController {
-
-    lazy var horizontalControllerConstraint: NSLayoutConstraint = NSLayoutConstraint()
+final class SearchViewController: UIViewController {
 
     private lazy var profileImageView = UIImageView().then {
         $0.layer.cornerRadius = 16
@@ -24,27 +22,26 @@ final class MainViewController: UIViewController {
 
     private lazy var mapView = MKMapView()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .white
-
-        view.addSubview(mapView)
-        view.addSubview(horizontalController.view)
-        
-        horizontalController.view.snp.makeConstraints {
-            $0.leading.trailing.equalToSuperview()
-            $0.bottom.equalToSuperview()
-            $0.height.equalTo(300)
-        }
+        setup()
 
         setupMap()
         layoutMap()
+        layoutHorizontalController()
         detectMapChanged()
     }
 }
 
-private extension MainViewController {
+private extension SearchViewController {
+    func setup() {
+        view.backgroundColor = .white
+    }
+    
     // TODO: change data
     func setupMap() {
         let initalCoordinates = CLLocationCoordinate2D(latitude: 59.9357, longitude: 30.3258)
@@ -56,8 +53,19 @@ private extension MainViewController {
     }
 
     func layoutMap() {
+        view.addSubview(mapView)
         mapView.snp.makeConstraints {
             $0.edges.equalToSuperview()
+        }
+    }
+    
+    func layoutHorizontalController() {
+        add(horizontalController)
+        
+        horizontalController.view.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            $0.height.equalTo(250)
         }
     }
 
@@ -80,17 +88,16 @@ private extension MainViewController {
                 self.view.layoutIfNeeded()
             }
         }
-
     }
 }
 
-extension MainViewController: UIGestureRecognizerDelegate {
+extension SearchViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
                            shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
 }
 
-extension MainViewController: MKMapViewDelegate {
+extension SearchViewController: MKMapViewDelegate {
 
 }

@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var appCoordinator: AppCoordinator?
 
     let appDependencies = AppDependencies()
 
@@ -19,9 +20,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
+        
+        appCoordinator = AppCoordinator()
+        appCoordinator?.start()
+        
+        // TODO: THINK OF THIS DI
+//        appDependencies.installRootViewControllerIntoWindow(window)
+        window.rootViewController = appCoordinator?.rootViewController
+
         window.makeKeyAndVisible()
         self.window = window
-        appDependencies.installRootViewControllerIntoWindow(window)
+        
+        // TODO: ADD SPLASH CONTROLLER
 //
 //        splashPresenter?.present()
 //
