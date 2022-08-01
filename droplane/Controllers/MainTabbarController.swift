@@ -11,7 +11,7 @@ final class MainTabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let searchVC = MainViewController()
+        let searchVC = SearchViewController()
         let profileVC = UIViewController()
         profileVC.view.backgroundColor = .systemBackground
         

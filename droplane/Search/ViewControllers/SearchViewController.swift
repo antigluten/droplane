@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  SearchViewController.swift
 //  droplane
 //
 //  Created by Vladimir Gusev on 19.05.2022.
@@ -11,7 +11,7 @@ import CoreLocation
 import Then
 import SnapKit
 
-final class MainViewController: UIViewController {
+final class SearchViewController: UIViewController {
 
     private lazy var profileImageView = UIImageView().then {
         $0.layer.cornerRadius = 16
@@ -37,7 +37,7 @@ final class MainViewController: UIViewController {
     }
 }
 
-private extension MainViewController {
+private extension SearchViewController {
     func setup() {
         view.backgroundColor = .white
     }
@@ -91,13 +91,13 @@ private extension MainViewController {
     }
 }
 
-extension MainViewController: UIGestureRecognizerDelegate {
+extension SearchViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
                            shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
 }
 
-extension MainViewController: MKMapViewDelegate {
+extension SearchViewController: MKMapViewDelegate {
 
 }

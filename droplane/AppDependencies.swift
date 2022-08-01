@@ -14,7 +14,7 @@ class AppDependencies {
     }
 
     func installRootViewControllerIntoWindow(_ window: UIWindow) {
-//        let viewController = MainViewController()
+
         let viewController = MainTabbarController()
         let navigationController = UINavigationController(rootViewController: viewController)
 

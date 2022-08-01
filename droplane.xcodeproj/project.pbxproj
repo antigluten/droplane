@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7011DE1289818140014631C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7011DE0289818140014631C /* AppCoordinator.swift */; };
+		A7011DE328981BC20014631C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7011DE228981BC20014631C /* Coordinator.swift */; };
+		A7011DE528981BD30014631C /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7011DE428981BD30014631C /* CoordinatorType.swift */; };
+		A7011DE728981D5B0014631C /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7011DE628981D5B0014631C /* SearchCoordinator.swift */; };
 		A715F2F7283CDAE100941D11 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A715F2F6283CDAE100941D11 /* MapKit.framework */; };
 		A74B0FEC2896C3DE00429CE5 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74B0FEB2896C3DE00429CE5 /* SectionHeaderView.swift */; };
 		A74B0FEE2896E79500429CE5 /* PlaceDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74B0FED2896E79500429CE5 /* PlaceDetailViewCell.swift */; };
@@ -21,7 +25,7 @@
 		A7A46E85288ACFF900CA5CEE /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A46E84288ACFF900CA5CEE /* AppDependencies.swift */; };
 		A7C6809A2836AA0C00B25117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C680992836AA0C00B25117 /* AppDelegate.swift */; };
 		A7C6809C2836AA0C00B25117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C6809B2836AA0C00B25117 /* SceneDelegate.swift */; };
-		A7C6809E2836AA0C00B25117 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C6809D2836AA0C00B25117 /* MainViewController.swift */; };
+		A7C6809E2836AA0C00B25117 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C6809D2836AA0C00B25117 /* SearchViewController.swift */; };
 		A7C680A32836AA0D00B25117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C680A22836AA0D00B25117 /* Assets.xcassets */; };
 		A7D8B92E2895B44900C40D21 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8B92D2895B44900C40D21 /* PlaceDetailsViewController.swift */; };
 		A7D8B9332895B56000C40D21 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8B9322895B56000C40D21 /* UILabel+Ext.swift */; };
@@ -36,6 +40,10 @@
 /* Begin PBXFileReference section */
 		0DD6454ED4D5D5815414C3E8 /* Pods_droplane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_droplane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2718570B09BD143A7F18B44C /* Pods-droplane.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-droplane.debug.xcconfig"; path = "Target Support Files/Pods-droplane/Pods-droplane.debug.xcconfig"; sourceTree = "<group>"; };
+		A7011DE0289818140014631C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A7011DE228981BC20014631C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A7011DE428981BD30014631C /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		A7011DE628981D5B0014631C /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		A715F2F6283CDAE100941D11 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A74B0FEB2896C3DE00429CE5 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		A74B0FED2896E79500429CE5 /* PlaceDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewCell.swift; sourceTree = "<group>"; };
@@ -51,7 +59,7 @@
 		A7C680962836AA0C00B25117 /* droplane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = droplane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C680992836AA0C00B25117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7C6809B2836AA0C00B25117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7C6809D2836AA0C00B25117 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A7C6809D2836AA0C00B25117 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A7C680A22836AA0D00B25117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7C680A72836AA0D00B25117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7D8B92D2895B44900C40D21 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +94,48 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A7011DE828981E9C0014631C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A7011DE428981BD30014631C /* CoordinatorType.swift */,
+				A7011DE228981BC20014631C /* Coordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A7011DE928981EB30014631C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A7011DEB28981EF20014631C /* ViewControllers */,
+				A7011DEA28981EEC0014631C /* Coordinator */,
+				A7011DEC28981EFD0014631C /* Views */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A7011DEA28981EEC0014631C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A7011DE628981D5B0014631C /* SearchCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A7011DEB28981EF20014631C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7C6809D2836AA0C00B25117 /* SearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A7011DEC28981EFD0014631C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A715F2F5283CDAE100941D11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,21 +161,6 @@
 				A7C680A22836AA0D00B25117 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		A77B9BC7288ACCDD004EB769 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A7C680992836AA0C00B25117 /* AppDelegate.swift */,
-				A7C6809B2836AA0C00B25117 /* SceneDelegate.swift */,
-				A7D8B9312895B54D00C40D21 /* Extensions */,
-				A7D8B92A2895ADD500C40D21 /* Core */,
-				A7D8B9282895ADBB00C40D21 /* Model */,
-				A7D8B9292895ADC500C40D21 /* Views */,
-				A7D8B92B2895B3E300C40D21 /* Controllers */,
-				A767BFDF288959B6003CC165 /* Splash */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		A79CB68E287AC3D00000008F /* Supporting Files */ = {
@@ -157,7 +192,17 @@
 		A7C680982836AA0C00B25117 /* droplane */ = {
 			isa = PBXGroup;
 			children = (
-				A77B9BC7288ACCDD004EB769 /* Classes */,
+				A7C680992836AA0C00B25117 /* AppDelegate.swift */,
+				A7C6809B2836AA0C00B25117 /* SceneDelegate.swift */,
+				A7011DE828981E9C0014631C /* Base */,
+				A7011DE0289818140014631C /* AppCoordinator.swift */,
+				A7A46E84288ACFF900CA5CEE /* AppDependencies.swift */,
+				A7D8B9312895B54D00C40D21 /* Extensions */,
+				A7011DE928981EB30014631C /* Search */,
+				A7D8B9282895ADBB00C40D21 /* Model */,
+				A7D8B9292895ADC500C40D21 /* Views */,
+				A7D8B92B2895B3E300C40D21 /* Controllers */,
+				A767BFDF288959B6003CC165 /* Splash */,
 				A77B9BC6288ACCBD004EB769 /* Resources */,
 				A79CB68E287AC3D00000008F /* Supporting Files */,
 			);
@@ -185,30 +230,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A7D8B92A2895ADD500C40D21 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				A7A46E84288ACFF900CA5CEE /* AppDependencies.swift */,
-				A7D8B92C2895B3F400C40D21 /* Controllers */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		A7D8B92B2895B3E300C40D21 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A7C6809D2836AA0C00B25117 /* MainViewController.swift */,
+				A7FDE97C2879C4B000B5A9B9 /* HorizontalSnappingController.swift */,
 				A7FDE97E2879C60400B5A9B9 /* MainHorizontalController.swift */,
 				A7D8B92D2895B44900C40D21 /* PlaceDetailsViewController.swift */,
 				A74B0FEF289706C200429CE5 /* MainTabbarController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		A7D8B92C2895B3F400C40D21 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				A7FDE97C2879C4B000B5A9B9 /* HorizontalSnappingController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -355,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7011DE1289818140014631C /* AppCoordinator.swift in Sources */,
 				A7FDE97F2879C60400B5A9B9 /* MainHorizontalController.swift in Sources */,
 				A7A46E85288ACFF900CA5CEE /* AppDependencies.swift in Sources */,
 				A7D8B9372895DB9A00C40D21 /* PlaceDetailHeaderView.swift in Sources */,
@@ -362,17 +391,20 @@
 				A7D8B939289685D000C40D21 /* StretchyHeaderLayout.swift in Sources */,
 				A74B0FF0289706C200429CE5 /* MainTabbarController.swift in Sources */,
 				A767BFE528895A91003CC165 /* SplashAnimator.swift in Sources */,
-				A7C6809E2836AA0C00B25117 /* MainViewController.swift in Sources */,
+				A7C6809E2836AA0C00B25117 /* SearchViewController.swift in Sources */,
 				A75BFAF22896BD52004E2A3E /* UIView+Ext.swift in Sources */,
 				A7C6809A2836AA0C00B25117 /* AppDelegate.swift in Sources */,
 				A7C6809C2836AA0C00B25117 /* SceneDelegate.swift in Sources */,
 				A74B0FEC2896C3DE00429CE5 /* SectionHeaderView.swift in Sources */,
 				A7D8B9332895B56000C40D21 /* UILabel+Ext.swift in Sources */,
+				A7011DE528981BD30014631C /* CoordinatorType.swift in Sources */,
 				A7D8B92E2895B44900C40D21 /* PlaceDetailsViewController.swift in Sources */,
 				A7FDE9812879C63D00B5A9B9 /* PlaceViewCell.swift in Sources */,
 				A75BFAF02896BC98004E2A3E /* SectionView.swift in Sources */,
+				A7011DE328981BC20014631C /* Coordinator.swift in Sources */,
 				A79CB690287AC43F0000008F /* Place.swift in Sources */,
 				A7FDE97D2879C4B000B5A9B9 /* HorizontalSnappingController.swift in Sources */,
+				A7011DE728981D5B0014631C /* SearchCoordinator.swift in Sources */,
 				A767BFE1288959C3003CC165 /* SplashViewController.swift in Sources */,
 				A75BFAE82896A0B2004E2A3E /* UIViewController+Ext.swift in Sources */,
 				A767BFE328895A53003CC165 /* SplashPresenter.swift in Sources */,
