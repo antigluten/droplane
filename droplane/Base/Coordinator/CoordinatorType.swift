@@ -10,4 +10,6 @@ import Foundation
 enum CoordinatorType {
     case main
     case search
+    case favorites
+    case profile
 }

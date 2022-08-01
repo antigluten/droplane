@@ -12,13 +12,15 @@ import Then
 import SnapKit
 
 final class SearchViewController: UIViewController {
+    
+    weak var coordinator: SearchCoordinator?
 
     private lazy var profileImageView = UIImageView().then {
         $0.layer.cornerRadius = 16
         $0.clipsToBounds = true
     }
 
-    private lazy var horizontalController = MainHorizontalController()
+    private lazy var horizontalController = PlaceCarouselHorizontalController()
 
     private lazy var mapView = MKMapView()
     
@@ -40,6 +42,7 @@ final class SearchViewController: UIViewController {
 private extension SearchViewController {
     func setup() {
         view.backgroundColor = .white
+        horizontalController.coordinator = coordinator
     }
     
     // TODO: change data
@@ -61,6 +64,7 @@ private extension SearchViewController {
     
     func layoutHorizontalController() {
         add(horizontalController)
+        horizontalController.view.isHidden = true
         
         horizontalController.view.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview()

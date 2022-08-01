@@ -13,12 +13,13 @@ class AppDependencies {
         configureDependencies()
     }
 
+    // TODO: DELETE OR USE THIS METHOD
     func installRootViewControllerIntoWindow(_ window: UIWindow) {
 
-        let viewController = MainTabbarController()
-        let navigationController = UINavigationController(rootViewController: viewController)
+//        let viewController = MainTabbarController()
+//        let navigationController = UINavigationController(rootViewController: viewController)
 
-        window.rootViewController = navigationController
+//        window.rootViewController = navigationController
     }
 
     func configureDependencies() {
