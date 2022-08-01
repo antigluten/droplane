@@ -1,5 +1,5 @@
 //
-//  MainHorizontalController.swift
+//  PlaceCarouselHorizontalController.swift
 //  droplane
 //
 //  Created by Vladimir Gusev on 09.07.2022.
@@ -8,7 +8,9 @@
 import UIKit
 import SDWebImage
 
-final class MainHorizontalController: HorizontalSnappingController {
+final class PlaceCarouselHorizontalController: HorizontalSnappingController {
+    weak var coordinator: SearchCoordinator?
+    
     override func viewDidLoad() {
         view.backgroundColor = .clear
         collectionView.backgroundColor = .clear
@@ -37,15 +39,16 @@ final class MainHorizontalController: HorizontalSnappingController {
         
         let place = MockData.mock[indexPath.item]
         
-        let placeDetailViewController = PlaceDetailsViewController(place: place)
-        placeDetailViewController.modalPresentationStyle = .fullScreen
+//        let placeDetailViewController = PlaceDetailsViewController(place: place)
+//        placeDetailViewController.modalPresentationStyle = .fullScreen
         
 //        navigationController?.pushViewController(placeDetailViewController, animated: true)
-        show(placeDetailViewController, sender: self)
+//        show(placeDetailViewController, sender: self)
+        coordinator?.navigate(to: .detail, with: place)
     }
 }
 
-extension MainHorizontalController: UICollectionViewDelegateFlowLayout {
+extension PlaceCarouselHorizontalController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {

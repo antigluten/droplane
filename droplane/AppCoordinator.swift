@@ -20,8 +20,9 @@ final class AppCoordinator: Coordinator {
     func start() {
         let searchCoordinator = SearchCoordinator()
         searchCoordinator.start()
-        childCoordinators.append(searchCoordinator)
+        searchCoordinator.setUpParent(to: self)
         addViewController(viewController: searchCoordinator.rootViewController, title: "Search", icon: "magnifyingglass.circle.fill")
+        childCoordinators.append(searchCoordinator)
     }
     
     private func addViewController(viewController: UIViewController, title: String, icon: String) {
