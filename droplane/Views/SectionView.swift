@@ -13,7 +13,7 @@ class SectionView: UIView {
     private lazy var headerView = SectionHeaderView()
     
     private lazy var containerView = UIView().then {
-        $0.backgroundColor = .systemMint
+        $0.backgroundColor = .systemGray
         $0.layer.cornerRadius = 14
     }
     

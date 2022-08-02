@@ -14,6 +14,9 @@ import SnapKit
 final class SearchViewController: UIViewController {
     
     weak var coordinator: SearchCoordinator?
+    
+    var locationManager: CLLocationManager?
+    var previousLocation: CLLocation?
 
     private lazy var profileImageView = UIImageView().then {
         $0.layer.cornerRadius = 16
@@ -32,10 +35,15 @@ final class SearchViewController: UIViewController {
         super.viewDidLoad()
         setup()
 
+        setupLocationManager()
+        checkLocationAutorization()
+        
         setupMap()
         layoutMap()
         layoutHorizontalController()
         detectMapChanged()
+        
+        addPin()
     }
 }
 
@@ -43,6 +51,22 @@ private extension SearchViewController {
     func setup() {
         view.backgroundColor = .white
         horizontalController.coordinator = coordinator
+    }
+    
+    func setupLocationManager() {
+        locationManager = CLLocationManager()
+        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager?.delegate = self
+    }
+    
+    func checkLocationAutorization() {
+        let status = CLLocationManager.authorizationStatus()
+        if status == .authorizedWhenInUse || status == .authorizedAlways {
+            activateLocationServices()
+        } else {
+            locationManager?.requestWhenInUseAuthorization()
+        }
+        
     }
     
     // TODO: change data
@@ -53,6 +77,9 @@ private extension SearchViewController {
         let region = MKCoordinateRegion(center: initalCoordinates, span: coordinateSpan)
         mapView.setRegion(region, animated: true)
         mapView.delegate = self
+        
+        
+//        mapView.showsUserLocation = true
     }
 
     func layoutMap() {
@@ -93,6 +120,17 @@ private extension SearchViewController {
             }
         }
     }
+    
+    
+    private func addPin() {
+        let pin = MKPointAnnotation()
+        pin.title = "title"
+        pin.subtitle = "subtitle"
+        
+        // TODO: Make it interactive to the user touches
+        pin.coordinate = CLLocationCoordinate2D(latitude: 59.9357, longitude: 30.3258)
+        mapView.addAnnotation(pin)
+    }
 }
 
 extension SearchViewController: UIGestureRecognizerDelegate {
@@ -103,5 +141,67 @@ extension SearchViewController: UIGestureRecognizerDelegate {
 }
 
 extension SearchViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "Custom")
+        
+        if annotationView == nil {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "Custom")
+            annotationView?.canShowCallout = true
+            
+        } else {
+            annotationView?.annotation = annotation
+        }
+        
+        annotationView?.image = UIImage(systemName: "mappin.circle.fill")
+        
+        return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        UIView.animate(withDuration: 1) {
+            self.horizontalController.view.isHidden = false
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+        UIView.animate(withDuration: 1) {
+            self.horizontalController.view.isHidden = true
+            self.view.layoutIfNeeded()
+        }
+    }
+}
 
+extension SearchViewController: CLLocationManagerDelegate {
+    
+    func activateLocationServices() {
+        locationManager?.startUpdatingLocation()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse || status == .authorizedAlways {
+            print("ios 13")
+            activateLocationServices()
+        }
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        if #available(iOS 14, *) {
+            let status = manager.authorizationStatus
+            if status == .authorizedWhenInUse || status == .authorizedWhenInUse {
+                print("ios 14")
+                activateLocationServices()
+            }
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if previousLocation == nil {
+            previousLocation = locations.first
+        } else {
+            guard let latest = locations.first else { return }
+            print(latest.coordinate)
+            previousLocation = latest
+        }
+    }
 }
